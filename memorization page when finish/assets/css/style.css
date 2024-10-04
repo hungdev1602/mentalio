@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --font-1: "Inter", sans-serif;
+  --font-2: "Unbounded", system-ui;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__back{
+  width: 80px;
+  height: 80px;
+  padding: 16px;
+  background: #DBEAC2;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  left: 25px;
+  top: 54px;
+  cursor: pointer;
+}
+
+.button__back-img{
+  width: 100%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flag__img{
+  width: 50px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.content__title{
+  font-size: 46px;
+  font-weight: 700;
+  font-family: var(--font-2);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.button__return-back{
+  padding: 20px 64px;
+  background: rgba(183, 218, 124, 0.5);
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 16px;
+  cursor: pointer;
+}
