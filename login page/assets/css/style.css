@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --font-1: "Inter", sans-serif;
+  --font-2: "Unbounded", system-ui;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-1);
+  background: #F3F6EE;
+}
+
+.container{
+  width: 1820px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.login__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.login__title-top, .login__title-bottom{
+  font-size: 68px;
+  font-weight: 700;
+  font-family: var(--font-2);
+}
+
+.login__title-bottom{
+  text-align: center;
+  margin-top: 10px;
+  /* linear color for text */
+  background: linear-gradient(to right, #4F6728, #87C026);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login__form{
+  margin-top: 60px;
+  width: 500px;
+  text-align: center;
+}
+
+.login__form-input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.login__form-button{
+  padding: 20px 53px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background: #7DB026;
+  border: none;
+  border-radius: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.login__with{
+  margin-top: 40px;
+  width: 300px;
+}
+
+.login__with-title{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.login__with-socials{
+  display: flex;
+  justify-content: space-between;
+}
+
+.login__with-button{
+  border: none;
+  cursor: pointer;
+}
+
+.login__with-button img{
+  width: 49px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* Decor */
+.decor{
+  width: 80px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  position: absolute;
+}
+
+.decor_1{
+  top: 145px;
+  left: 319px;
+}
+
+.decor_2{
+  top: 799px;
+  left: 319px;
+}
+
+.decor_3{
+  top: 314px;
+  right: 0px;
+}
+
+.decor_4{
+  top: 540px;
+  left: 0px;
+}
+
+.decor_5{
+  top: 55px;
+  right: 254px;
+}
+/* End Decor */
