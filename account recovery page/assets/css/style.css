@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --font-1: "Inter", sans-serif;
+  --font-2: "Unbounded", system-ui;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-1);
+  background: #F3F6EE;
+}
+
+.container{
+  width: 1820px;
+  margin: 0 auto;
+  position: relative;
+}
+/* Login content */
+.login__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 310px;
+}
+
+.login__title-top, .login__title-bottom{
+  font-size: 68px;
+  font-weight: 700;
+  font-family: var(--font-2);
+}
+
+.login__title-bottom{
+  text-align: center;
+  margin-top: 10px;
+  /* linear color for text */
+  background: linear-gradient(to right, #4F6728, #87C026);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* End Login content */
+
+/* Recovery*/
+.recovery{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recovery__title{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.recovery__form{
+  width: 500px;
+}
+
+.recovery__form-input{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  margin-bottom: 11px;
+}
+
+.recovery__form-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.recovery__form-button-back, .recovery__form-button-submit{
+  font-size: 20px;
+  font-weight: 500px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.recovery__form-button-back{
+  padding: 20px 66px;
+  border: 1px solid #000;
+}
+
+.recovery__form-button-submit{
+  padding: 20px 99px;
+  border: none;
+  background: #7DB026;
+  color: #fff;
+}
+
+/* End Recovery */
+
+/* Login with */
+.login__with{
+  margin-top: 40px;
+  width: 300px;
+}
+
+.login__with-title{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.login__with-socials{
+  display: flex;
+  justify-content: space-between;
+}
+
+.login__with-button{
+  border: none;
+  cursor: pointer;
+}
+
+.login__with-button img{
+  width: 49px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* End Login with */
