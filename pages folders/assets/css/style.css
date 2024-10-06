@@ -308,6 +308,10 @@ body{
   overflow: hidden;
 }
 
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
 .scrollable-content {
   height: 100%;
   overflow-y: auto;
