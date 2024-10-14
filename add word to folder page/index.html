@@ -176,7 +176,7 @@
         <div class="section-1__modes">
           <a href="#" class="section-1__modes-button">Карточки</a>
           <a href="#" class="section-1__modes-button">Заучивание</a>
-          <button class="section-1__modes-button">Тест</button>
+          <button class="section-1__modes-button" button-test-toggle-popup>Тест</button>
         </div>
 
         <!-- List Words -->
@@ -185,6 +185,7 @@
           <div class="section-1__word">
             <div class="section-1__word-data">
               <div class="section-1__word-original">Articulación</div>
+              <span class="section-1__word-border"></span>
               <div class="section-1__word-translated">Сустав</div>
             </div>
             <div class="section-1__word-setting">
@@ -204,6 +205,7 @@
           <div class="section-1__word">
             <div class="section-1__word-data">
               <div class="section-1__word-original">Articulación</div>
+              <span class="section-1__word-border"></span>
               <div class="section-1__word-translated">Сустав</div>
             </div>
             <div class="section-1__word-setting">
@@ -223,6 +225,7 @@
           <div class="section-1__word">
             <div class="section-1__word-data">
               <div class="section-1__word-original">Articulación</div>
+              <span class="section-1__word-border"></span>
               <div class="section-1__word-translated">Сустав</div>
             </div>
             <div class="section-1__word-setting">
@@ -236,6 +239,48 @@
                 <img src="./assets/images/image-14.png" alt="">
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Popup -->
+        <div class="create-folders-popup hidden" popup-create-folders>
+          <div class="create-folders-popup__layer" popup-layer></div>
+          <div class="create-folders-popup__content" popup-content>
+            <h3 class="create-folders-popup__title">Настройте свой тест</h3>
+
+            <form class="popup-test__form">
+              <div class="popup-test__form-group">
+                <label for="input-quantity" class="popup-test__form-group-label">Вопросы (максимум 12)</label>
+                <input type="number" min="1" max="12" class="popup-test__form-group-input input-quantity"
+                  id="input-quantity">
+              </div>
+              <div class="popup-test__form-group">
+                <label for="" class="popup-test__form-group-label">Верно - неверно</label>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <div class="slider round"></div>
+                </label>
+              </div>
+              <div class="popup-test__form-group">
+                <label for="" class="popup-test__form-group-label">Вопросы с выбором ответа</label>
+                <label class="switch">
+                  <input type="checkbox">
+                  <div class="slider round"></div>
+                </label>
+              </div>
+              <div class="popup-test__form-group">
+                <label for="" class="popup-test__form-group-label">Письменные вопросы</label>
+                <label class="switch">
+                  <input type="checkbox">
+                  <div class="slider round"></div>
+                </label>
+              </div>
+
+              <!-- Button submit -->
+              <div class="popup-test__form-group-button">
+                <button type="submit" class="popup-test__form-group-submit">Начать тест</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
