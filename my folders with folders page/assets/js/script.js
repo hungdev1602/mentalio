@@ -1,8 +1,8 @@
 // Toggle popup
-const buttonTogglePopup = document.querySelector("[button-toggle-popup]");
+const folderTogglePopup = document.querySelector("[folder-toggle-popup]");
 const popupCreateFolders = document.querySelector("[popup-create-folders]");
-if(buttonTogglePopup){
-  buttonTogglePopup.addEventListener("click", () => {
+if(folderTogglePopup){
+  folderTogglePopup.addEventListener("click", () => {
     popupCreateFolders.classList.toggle("hidden")
     setTimeout(() => {
       popupCreateFolders.classList.toggle("opacity")
@@ -17,3 +17,13 @@ if(popupLayer){
     popupCreateFolders.classList.toggle("opacity")
   })
 }
+// End Toggle popup
+
+// Flip folder
+const cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+})
+// End Flip folder
