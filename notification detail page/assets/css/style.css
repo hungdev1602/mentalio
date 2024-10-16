@@ -230,7 +230,6 @@ body{
 .notification__content{
   width: 100%;
   padding: 40px 10px;
-  background: #fff;
   display: flex;
   gap: 76px;
   border-radius: 10px;
@@ -279,48 +278,47 @@ body{
 .notification__right{
   flex: 1;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.notification__right-item{
-  display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
 }
 
-.notification__right-item-message{
-  padding: 8px 20px 8px 5px;
+.notification__right-message{
+  height: 675px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.notification__right-message-info{
   display: flex;
   align-items: center;
-  gap: 20px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  cursor: pointer;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.notification__right-item-input{
-  width: 19px;
-  height: 16px;
-  border-radius: 5px;
+.notification__right-message-avatar{
+  width: 40px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
-.notification__right-item-data{
-  /* show only 1 line */
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  
-  font-size: 14px;
-}
-
-.notification__right-item-date{
-  width: 121px;
-  border: 1px solid #000;
-  padding: 8px 22px;
-  border-radius: 10px;
+.notification__right-message-info-userName{
   font-size: 14px;
   font-weight: 700;
+}
+
+.notification__right-message-detail{
+  padding: 0px 50px;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.notification__right-date{
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 22px;
+  border: 1px solid #000;
+  border-radius: 10px;
 }
 /* End notification */
