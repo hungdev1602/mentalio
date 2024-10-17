@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Mentalio</title>
+</head>
+
+<body>
+  <div class="container">
+    <a href="#" class="button__back">
+      <img src="./assets/images/arrow-down.png" alt="" class="button__back-img">
+    </a>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="content__title">Термины B2</div>
+      <div class="content__progress-bar">
+        <div class="content__progress-bar-top"></div>
+        <div class="content__progress-bar-bottom"></div>
+      </div>
+
+      <!-- Cards slider -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- 1 card -->
+          <div class="swiper-slide">
+            <div class="scene scene--card">
+              <div class="card">
+                <div class="card__face card__face--front-without-img">
+                  <div class="card__face--front-title no-img">Articulación</div>
+
+                  <div class="card__face--front-features">
+                    <img src="./assets/images/edit.png" alt="" class="card__face--front-edit" edit-mode>
+                    <img src="./assets/images/voice.png" alt="" class="card__face--front-voice">
+                  </div>
+                </div>
+                <div class="card__face card__face--back">
+                  Сустав
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 card -->
+          <div class="swiper-slide">
+            <div class="scene scene--card">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="card__face--front-title">Articulación</div>
+                  <img src="./assets/images/image_1.png" alt="" class="card__face--front-img">
+                  <div class="card__face--front-features">
+                    <img src="./assets/images/edit.png" alt="" class="card__face--front-edit" edit-mode>
+                    <img src="./assets/images/voice.png" alt="" class="card__face--front-voice">
+                  </div>
+                </div>
+                <div class="card__face card__face--back">
+                  Сустав
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 card -->
+          <div class="swiper-slide">
+            <div class="scene scene--card">
+              <div class="card">
+                <div class="card__face card__face--front">
+                  <div class="card__face--front-title">Articulación</div>
+                  <img src="./assets/images/image_1.png" alt="" class="card__face--front-img">
+                  <div class="card__face--front-features">
+                    <img src="./assets/images/edit.png" alt="" class="card__face--front-edit" edit-mode>
+                    <img src="./assets/images/voice.png" alt="" class="card__face--front-voice">
+                  </div>
+                </div>
+                <div class="card__face card__face--back">
+                  Сустав
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- Edit popup -->
+      <div class="content__cards-edit" editPopup>
+        <!-- 1 -->
+        <div class="content__cards-edit-item">
+          <div class="content__cards-edit-item-title">Бесконечный режим</div>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <div class="slider round"></div>
+          </label>
+        </div>
+        <!-- 2 -->
+        <div class="content__cards-edit-item">
+          <div class="content__cards-edit-item-title">Перемешать все карточки</div>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <div class="slider round"></div>
+          </label>
+        </div>
+        <!-- 3 -->
+        <div class="content__cards-edit-item">
+          <div class="content__cards-edit-item-title">Изучать избранное</div>
+          <label class="switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
