@@ -27,3 +27,14 @@ cards.forEach(card => {
   });
 })
 // End Flip folder
+
+// Click in to words
+const links = document.querySelectorAll(".card-back-data__word");
+if(links.length > 0){
+  links.forEach(link => {
+    link.addEventListener("click", (event) => {
+      // ko ảnh hưởng đến thẻ cha
+      event.stopPropagation();
+    })
+  })
+}
