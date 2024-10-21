@@ -40,3 +40,25 @@ if(popupLayer){
     popupCreateFolders.classList.toggle("opacity")
   })
 }
+
+// Sort popup
+const buttonSortPopup = document.querySelector("[button-sort-popup]");
+const sortPopup = document.querySelector("[sort-popup]")
+if(buttonSortPopup){
+  buttonSortPopup.addEventListener("click", () => {
+    sortPopup.classList.add("show")
+    setTimeout(() => {
+      sortPopup.classList.add("opacity")
+    }, 100)
+  })
+}
+
+// Close sort popup
+window.addEventListener('click', (e) => {   
+  if (sortPopup.contains(e.target)){
+    // Clicked in box editPopup
+  } else{
+    sortPopup.classList.add("hidden");
+    sortPopup.classList.remove("opacity");
+  }
+});

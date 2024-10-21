@@ -23,9 +23,31 @@
       <div class="header__mid">
         <form class="header__mid-form">
           <input type="text" class="header__mid-input">
-          <div class="header__mid-sort">
+          <div class="header__mid-sort" button-sort-popup>
             Сортировать
             <img src="./assets/images/bx_sort.png" alt="" class="header__mid-img">
+
+            <div class="header__mid-sort-popup hidden" sort-popup>
+              <div class="header__mid-sort-choice-group">
+                <input type="checkbox" class="header__mid-sort-checkbox" id="sort-medicine">
+                <label for="sort-medicine" class="header__mid-sort-label">Медицина</label>
+              </div>
+
+              <div class="header__mid-sort-choice-group">
+                <input type="checkbox" class="header__mid-sort-checkbox" id="sort-foreign-languages">
+                <label for="sort-foreign-languages" class="header__mid-sort-label">Иностранные языки</label>
+              </div>
+
+              <div class="header__mid-sort-choice-group">
+                <input type="checkbox" class="header__mid-sort-checkbox" id="sort-exact-sciences">
+                <label for="sort-exact-sciences" class="header__mid-sort-label">Точные науки</label>
+              </div>
+
+              <div class="header__mid-sort-choice-group">
+                <input type="checkbox" class="header__mid-sort-checkbox" id="sort-natural-sciences">
+                <label for="sort-natural-sciences" class="header__mid-sort-label">Естественные науки</label>
+              </div>
+            </div>
           </div>
         </form>
       </div>

@@ -99,6 +99,7 @@ body{
   font-size: 20px;
   border: 1px solid #000;
   outline: none;
+  background: transparent;
 }
 
 .header__mid-sort{
@@ -118,6 +119,33 @@ body{
   width: 24px;
   aspect-ratio: 1/1;
   object-fit: cover;
+}
+
+.header__mid-sort-popup{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -141px;
+  padding: 19px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.header__mid-sort-choice-group{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__mid-sort-label{
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .header__right{
@@ -294,12 +322,16 @@ body{
 /* End Flip folder */
 
 /* Section 2 */
+.section-2{
+  margin-bottom: 94px;
+}
+
 .section-2__title{
   font-size: 72px;
   font-weight: 700;
   font-family: var(--font-2);
   text-align: center;
-  margin-bottom: 74px;
+  margin-bottom: 74px;  
 }
 
 .section-2__list-folders{
@@ -482,4 +514,8 @@ body{
 
 .opacity{
   opacity: 1;
+}
+
+.show{
+  display: flex;
 }
