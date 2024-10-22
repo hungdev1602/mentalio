@@ -27,7 +27,7 @@ const myChart = new Chart(document.getElementById("bar-chart"), {
     datasets: [
       { 
         data: [0,25,15,55,75,35, 50],
-        label: "Процент усваемости",
+        label: "Процент успеваемости",
         borderColor: "#C2C5BE",
         fill: false,
         pointStyle: 'circle',
@@ -43,11 +43,12 @@ const myChart = new Chart(document.getElementById("bar-chart"), {
     legend: { display: false },
     title: {
       display: true,
-      text: 'Процент усваемости'
+      text: 'Процент успеваемости'
     }
   }
 });
 
+// Blink last points
 let count = 0;
 setInterval(() => {
   if(count % 2 === 0){

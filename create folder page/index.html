@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentalio</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <!-- Left -->
+      <div class="header__left">
+        <a href="#" class="header__left-button">Главная</a>
+        <a href="#" class="header__left-button active">Создать</a>
+      </div>
+
+      <!-- Mid -->
+      <div class="header__mid">
+        <form class="header__mid-form">
+          <input type="text" class="header__mid-input">
+
+        </form>
+      </div>
+
+      <!-- Right -->
+      <div class="header__right">
+        <img src="./assets/images/mdi_bell.png" alt="notification" class="header__right-notification">
+        <img src="./assets/images/avatar.png" alt="" class="header__right-avatar">
+      </div>
+    </header>
+
+    <!-- Create folder form -->
+    <div class="create-folder">
+      <h2 class="create-folder__title">Создание папки</h2>
+      <form action="#" class="create-folder__form">
+        <!-- folder name -->
+        <div class="create-folder__form-group">
+          <label for="folder-name" class="create-folder__form-group-label">Название папки</label>
+          <input type="text" id="folder-name" class="create-folder__form-group-input"
+            placeholder="Добавить название папки">
+        </div>
+
+        <!-- Тема -->
+        <div class="create-folder__form-group">
+          <label for="folder-name" class="create-folder__form-group-label">Тема</label>
+          <select type="text" id="folder-name" class="create-folder__form-group-input"
+            placeholder="Добавить название папки">
+            <option value="">Добавить тему</option>
+            <option value="">Медицина</option>
+            <option value="">Иностранные языки</option>
+            <option value="">Точные науки</option>
+            <option value="">Естественные науки</option>
+            <option value="">Социально - гуманитарные науки</option>
+          </select>
+        </div>
+
+        <!-- Название -->
+        <div class="create-folder__form-group">
+          <label for="folder-name" class="create-folder__form-group-label">Название</label>
+          <input type="text" id="folder-name" class="create-folder__form-group-input" placeholder="Добавить название">
+        </div>
+
+        <!-- Button submit -->
+        <button class="create-folder__form-button">Создать</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
