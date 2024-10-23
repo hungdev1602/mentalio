@@ -20,13 +20,15 @@ if(popupLayer){
 
 // ChartJS
 // Line chart
+const data = [22, 25, 15, 55, 75, 35, 50]
+
 const myChart = new Chart(document.getElementById("bar-chart"), {
   type: 'line',
   data: {
     labels: ['День 1', 'День 2', 'День 3', 'День 4', 'День 5', 'День 6', 'День 7'],
     datasets: [
       { 
-        data: [0,25,15,55,75,35, 50],
+        data: data,
         label: "Процент успеваемости",
         borderColor: "#C2C5BE",
         fill: false,

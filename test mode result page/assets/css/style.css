@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --font-1: "Inter", sans-serif;
+  --font-2: "Unbounded", system-ui;
+  --primary-color: #000;
+  --secondary-color: #868585;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+body{
+  font-family: var(--font-1);
+  
+  background: #F3F6EE;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #353131;
+}
+/* End Scrollbar */
+
+/* Container */
+.container{
+  width: 1870px;
+  margin: 0 auto;
+}
+/* End Container */
+
+.fill{
+  background: #fff;
+  height: 100vh;
+  width: 80px;
+  position: fixed;
+  left: 0;
+}
+
+/* Sider */
+.sider{
+  width: 285px;
+  height: 100vh;
+  background: #fff;
+  padding-right: 10px;
+  padding-top: 33px;
+  position: fixed;
+  left: 0;
+  padding-left: 25px;
+}
+
+.sider__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sider__user{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sider__avatar{
+  background: #4F6728;
+  width: 24px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.sider__username{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font-2);
+}
+
+.sider__burger{
+  width: 24px;
+  aspect-ratio: 1/1;
+}
+
+.sider__burger img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.sider__bottom{
+  margin-top: 23px;
+}
+
+.sider__bottom-main{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 11px;
+  padding-left: 5px;
+}
+
+.sider__bottom-main p{
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.sider__bottom-main img{
+  width: 24px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.sider__menu{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sider__menu-element{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px 5px 5px;
+  border-radius: 11px;
+  position: relative;
+}
+
+.sider__menu-element img {
+  width: 24px;
+  aspect-ratio: 1 / 1;
+}
+
+.sider__menu-noti{
+  position: absolute;
+  top: -4px;
+  left: 30px;
+  height: 13px;
+  width: 13px;
+  padding: 5px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 7px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sider__menu-left{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sider__menu-right{
+  font-family: var(--font-2);
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+
+.sider__menu-element.active{
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.sider__menu-element.active .sider__menu-right{
+  color: #fff;
+}
+
+.sider__submenu p{
+  color: var(--secondary-color);
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.mentalio{
+  position: absolute;
+  bottom: 17px;
+  left: 92px;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+/* End Sider */
+
+/* Test */
+.test{
+  padding-left: 509px;
+  padding-top: 102px;
+}
+
+.test__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  width: 894px;
+}
+
+.test__header-left{
+  font-family: var(--font-2);
+}
+
+.test__header-title{
+  font-size: 46px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.test__header-quantity{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.test__header-parameters{
+  padding: 7px 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.test__questions{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.test__question{
+  width: 894px;
+  padding: 10px 20px;
+  background: rgba(183, 218, 124, 0.2);
+  border-radius: 10px;
+}
+
+.test__question.wrong{
+  background: #FFC0C080;
+}
+
+.test__question-title{
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.test__question-answer{
+  position: relative;
+}
+
+.test__question-answer-correct{
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px;
+  background: #8AB83C;
+  border-radius: 10px;
+  opacity: 1;
+  animation: slideInFromLeft 1.5s linear forwards;
+}
+
+.test__question-answer-correct.with-wrong-answer{
+  padding-left: 170px;
+
+  animation: slideWithPadding 1.5s linear forwards;
+}
+
+.test__question-answer-wrong{
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px;
+  background: #FF0000CC;
+  border-radius: 10px;
+
+  /* 1 line */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  animation: slideInFromLeft 1.5s linear forwards;
+}
+
+.test__buttons-complete{
+  width: 894px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.test__buttons-finish, .test__buttons-back{
+  padding: 20px 59px;
+  background: #7DB026;
+  border: none;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.test__buttons-finish{
+  color: #fff;
+  background-image: linear-gradient(to right, #4F6728E5, #87C026E5, #4F6728E5);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
+.test__buttons-back{
+  background: rgba(183, 218, 124, 0.5);
+}
+/* End Test */
+
+@keyframes gradient {
+	/* 0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	} */
+  0% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+  100% { 
+    background-position: 200% 50%; 
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes slideWithPadding {
+  from {
+    width: 0;
+    padding-left: 10px;
+  }
+  to{
+    padding-left: 170px;
+  }
+}
