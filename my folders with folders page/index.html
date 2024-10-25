@@ -148,9 +148,14 @@
 
         <div class="my-folders__list-folders">
           <!-- 1 Folder -->
-          <div class="my-folders__folder-item">
-            <div class="my-folders__folder-item-options">
+          <div class="my-folders__folder-item" folder>
+            <div class="my-folders__folder-item-options" toggle-option>
               <img src="./assets/images/three_dots.svg" alt="">
+              <!-- Dropdown -->
+              <div class="dropdown-content hidden" dropdown-content>
+                <div class="dropdown-content__rename" folder-rename>Переименовать</div>
+                <div class="dropdown-content__delete" folder-delete>Удалить</div>
+              </div>
             </div>
 
             <!-- Flip part -->
@@ -180,16 +185,49 @@
               </div>
             </div>
 
-
             <!-- Folder title -->
             <div class="my-folders__folder-item-title">Анатомия</div>
 
+            <!-- Popup delete folder -->
+            <div class="create-folders-popup hidden" delete-folder=1>
+              <div class="create-folders-popup__layer" delete-folder-layer></div>
+              <div class="create-folders-popup__content">
+                <h3 class="create-folders-popup__title">Вы уверены, что хотите удалить папку</h3>
+                <div class="create-folders-popup__links">
+                  <button class="create-folders-popup__button create-folders-popup__button-create"
+                    button-cancel-delete>Отмена</button>
+                  <button class="create-folders-popup__button create-folders-popup__button-catalog">Удалить</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Popup rename folder -->
+            <div class="create-folders-popup hidden" rename-folder=1>
+              <div class="create-folders-popup__layer" rename-folder-layer></div>
+              <div class="create-folders-popup__content">
+                <h3 class="create-folders-popup__title">Переименовать папку</h3>
+                <div class="create-folders-popup__rename">
+                  <label for="rename" class="create-folders-popup__rename-label">Макс кол-во 30 слов</label>
+                  <input type="text" id="rename" class="create-folders-popup__rename-input">
+                </div>
+                <div class="create-folders-popup__links">
+                  <button class="create-folders-popup__button create-folders-popup__button-create"
+                    button-cancel-rename>Отмена</button>
+                  <button class="create-folders-popup__button create-folders-popup__button-catalog">Переименовать</a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- 2 Folder -->
-          <div class="my-folders__folder-item">
-            <div class="my-folders__folder-item-options">
+          <!-- 1 Folder -->
+          <div class="my-folders__folder-item" folder>
+            <div class="my-folders__folder-item-options" toggle-option>
               <img src="./assets/images/three_dots.svg" alt="">
+              <!-- Dropdown -->
+              <div class="dropdown-content hidden" dropdown-content>
+                <div class="dropdown-content__rename" folder-rename>Переименовать</div>
+                <div class="dropdown-content__delete" folder-delete>Удалить</div>
+              </div>
             </div>
 
             <!-- Flip part -->
@@ -219,10 +257,38 @@
               </div>
             </div>
 
-
             <!-- Folder title -->
             <div class="my-folders__folder-item-title">Анатомия</div>
 
+            <!-- Popup delete folder -->
+            <div class="create-folders-popup hidden" delete-folder=2>
+              <div class="create-folders-popup__layer" delete-folder-layer></div>
+              <div class="create-folders-popup__content">
+                <h3 class="create-folders-popup__title">Вы уверены, что хотите удалить папку</h3>
+                <div class="create-folders-popup__links">
+                  <button class="create-folders-popup__button create-folders-popup__button-create"
+                    button-cancel-delete>Отмена</button>
+                  <button class="create-folders-popup__button create-folders-popup__button-catalog">Удалить</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Popup rename folder -->
+            <div class="create-folders-popup hidden" rename-folder=2>
+              <div class="create-folders-popup__layer" rename-folder-layer></div>
+              <div class="create-folders-popup__content">
+                <h3 class="create-folders-popup__title">Переименовать папку</h3>
+                <div class="create-folders-popup__rename">
+                  <label for="rename" class="create-folders-popup__rename-label">Макс кол-во 30 слов</label>
+                  <input type="text" id="rename" class="create-folders-popup__rename-input">
+                </div>
+                <div class="create-folders-popup__links">
+                  <button class="create-folders-popup__button create-folders-popup__button-create"
+                    button-cancel-rename>Отмена</button>
+                  <button class="create-folders-popup__button create-folders-popup__button-catalog">Переименовать</a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Folder add -->
@@ -239,6 +305,7 @@
       </div>
     </div>
 
+    <!-- Popup create folder -->
     <div class="create-folders-popup hidden" popup-create-folders>
       <div class="create-folders-popup__layer" popup-layer></div>
       <div class="create-folders-popup__content" popup-content>
@@ -249,6 +316,8 @@
         </div>
       </div>
     </div>
+
+
   </div>
 
   <script src="./assets/js/script.js"></script>

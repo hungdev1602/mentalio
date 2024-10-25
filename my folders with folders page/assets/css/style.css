@@ -237,6 +237,31 @@ body{
   width: 40px;
   cursor: pointer;
   margin-left: auto;
+  position: relative;
+}
+
+.dropdown-content{
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  z-index: 10;
+  cursor: default;
+}
+
+.dropdown-content__rename, .dropdown-content__delete{
+  border: 1px solid #000;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.dropdown-content__delete{
+  color: #CD2F2F;
+  margin-bottom: 0px;
 }
 
 .my-folders__folder-item-title{
@@ -367,6 +392,7 @@ body{
   justify-content: center;
   opacity: 0;
   transition: opacity 0.2s linear;
+  z-index: 999;
 }
 
 .create-folders-popup__layer{
@@ -394,12 +420,34 @@ body{
   font-weight: 500;
 }
 
+.create-folders-popup__rename{
+  width: 343px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.create-folders-popup__rename-label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-folders-popup__rename-input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #000;
+}
+
 .create-folders-popup__button{
   padding: 8px 75px;
   display: inline-block;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
+  border: none;
+  cursor: pointer;
 }
 
 .create-folders-popup__button-create{
