@@ -260,7 +260,7 @@ body{
   color: #fff;
   border-radius: 16px;
   border: none;
-  background-image: linear-gradient(to right, #4F6728E5, #87C026E5, #4F6728E5);
+  background-image: linear-gradient(to right, #24AC18E5, #0F460AE5, #24AC18E5);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
   cursor: pointer;

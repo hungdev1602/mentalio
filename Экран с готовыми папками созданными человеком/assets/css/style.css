@@ -76,7 +76,7 @@ body{
 
 .header__left-button.active{
   padding: 13px 60px;
-  background: #89B73A;
+  background: #24AC18;
   color: white;
   border-radius: 20px;
   border: none;
@@ -181,7 +181,7 @@ body{
   text-align: center;
   margin-bottom: 10px;
   /* linear color for text */
-  background: linear-gradient(to right, #4F6728, #87C026);
+  background: linear-gradient(to right, #24AC18, #0F460A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -350,6 +350,7 @@ body{
   width: 40px;
   cursor: pointer;
   margin-left: auto;
+  margin-bottom: -15px;
 }
 
 .section-2__list-item-report img{
@@ -497,7 +498,7 @@ body{
   display: block;
   margin: 0 auto;
   padding: 8px 52px;
-  background: #85B138;
+  background: #24AC18;
   border-radius: 10px;
   border: none;
   font-size: 16px;

@@ -255,7 +255,7 @@ body{
 .test__question{
   width: 894px;
   padding: 10px 20px;
-  background: rgba(183, 218, 124, 0.2);
+  background: #BFE3B833;
   border-radius: 10px;
 }
 
@@ -277,7 +277,7 @@ body{
   font-size: 14px;
   font-weight: 400;
   border: none;
-  background: rgba(183, 218, 124, 0.3);
+  background: #BFE3B84D;
   border-radius: 9px;
   outline: none;
 }
@@ -287,7 +287,7 @@ body{
   padding: 10px 42px;
   border-radius: 10px;
   border: none;
-  background: #7DB026;
+  background: #24AC18CC;
   color: #fff;
   cursor: pointer;
 }
@@ -296,11 +296,12 @@ body{
   width: 894px;
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .test__buttons-finish, .test__buttons-back{
-  padding: 20px 141px;
-  background: #7DB026;
+  display: inline-block;
+  padding: 20px 130px;
   border: none;
   border-radius: 16px;
   font-size: 20px;
@@ -308,7 +309,35 @@ body{
   cursor: pointer;
 }
 
+.test__buttons-finish{
+  color: #fff;
+  background-image: linear-gradient(to right, #24AC18E5, #0F460AE5, #24AC18E5);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
 .test__buttons-back{
   background: rgba(183, 218, 124, 0.5);
+}
+
+@keyframes gradient {
+	/* 0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	} */
+  0% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+  100% { 
+    background-position: 200% 50%; 
+  }
 }
 /* End Test */

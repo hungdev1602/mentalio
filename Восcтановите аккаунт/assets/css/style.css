@@ -74,6 +74,7 @@ body{
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.9);
   margin-bottom: 11px;
+  background: transparent;
 }
 
 .recovery__form-buttons{
@@ -91,12 +92,13 @@ body{
 .recovery__form-button-back{
   padding: 20px 66px;
   border: 1px solid #000;
+  background: transparent;
 }
 
 .recovery__form-button-submit{
   padding: 20px 99px;
   border: none;
-  background: #7DB026;
+  background: #24AC18E5;
   color: #fff;
 }
 

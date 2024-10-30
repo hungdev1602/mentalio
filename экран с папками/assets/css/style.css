@@ -237,6 +237,7 @@ body{
   width: 40px;
   cursor: pointer;
   margin-left: auto;
+  margin-bottom: -15px;
   position: relative;
 }
 
@@ -455,8 +456,12 @@ body{
 }
 
 .create-folders-popup__button-catalog{
-  background: #85B138;
+  background: #24AC18;
   color: #fff;
+}
+
+.rename-button{
+  padding: 8px 47px;
 }
 /* End Create folders popup */
 

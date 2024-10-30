@@ -39,10 +39,11 @@ body{
 .login__title-bottom{
   text-align: center;
   margin-top: 10px;
-  /* linear color for text */
+  color: #24AC18;
+  /* linear color for text
   background: linear-gradient(to right, #4F6728, #87C026);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .login__form{
@@ -74,13 +75,13 @@ body{
   width: 30px;
   height: 30px;
   border-radius: 10px;
-  appearance: none;
+  /* appearance: none; */
   border: 1px solid #000;
 }
 
-.checkbox-role:checked {
+/* .checkbox-role:checked {
   background-color: #7DB026;
-}
+} */
 
 .checkbox-label{
   font-size: 18px;
@@ -92,11 +93,33 @@ body{
   font-size: 20px;
   font-weight: 500;
   color: white;
-  background: #7DB026;
   border: none;
   border-radius: 16px;
   margin-top: 30px;
+  background-image: linear-gradient(to right, #24AC18E5, #0F460AE5, #24AC18E5);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
   cursor: pointer;
+}
+@keyframes gradient {
+	/* 0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	} */
+  0% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+  100% { 
+    background-position: 200% 50%; 
+  }
 }
 
 .login__with{
